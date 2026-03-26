@@ -1,0 +1,18 @@
+{
+    "agents": [
+        {
+            "id": "claude_analyst",
+            "name": "Claude Analysis Agent",
+            "url": "http://127.0.0.1:8001/a2a/task",
+            "capabilities": ["資料分析", "文章摘要", "重點提煉", "邏輯拆解", "資訊整理"],
+            "description": "擅長分析大量文字內容，找出重點並精確總結。遇到需要理解複雜文件或要求摘要時，請發送給此 Agent。"
+        },
+        {
+            "id": "google_writer",
+            "name": "Google Writer Agent",
+            "url": "http://127.0.0.1:8002/a2a/task",
+            "capabilities": ["文案撰寫", "內容生成", "故事發想", "行銷推廣", "信件回覆"],
+            "description": "擅長創作與文字生成。當任務需要撰寫新的內容、回覆信件、發想創意文案或擴寫文章時，請發送給此 Agent。"
+        }
+    ]
+}

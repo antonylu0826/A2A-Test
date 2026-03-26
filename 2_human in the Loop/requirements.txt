@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+anthropic
+google-genai
+requests
+python-dotenv
