@@ -14,6 +14,7 @@
 5. **非同步信號處理 (Async Webhooks)**：利用背景任務與事件驅動 Webhook，解決長耗時任務造成的 HTTP Timeout。
 6. **安全與權限管控 (Security & RBAC)**：導入 JWT (JSON Web Token) 短效通行機制與攔截器，防止內網未授權盜用 API 額度。
 7. **大聲公競標市場 (Broadcast & Negotiation)**：拋棄總機的中央集權派發，改由全網子代理根據專長「自主評定信心值並出價標案」。
+8. **A2A 官方 SDK 整合 (Official A2A v1.0)**：全面遷移至官方 `a2a-sdk`，支援標準 JSON-RPC 2.0、AgentCard 發現機制、以及全非同步的 SSE 串流通訊。
 
 ---
 
@@ -47,12 +48,12 @@ cp .env.example .env
 pip install -r requirements.txt # (若有準備的話)
 ```
 
-### 3. 一鍵啟動 (以最先進的第七階段為例)
-進入第七階段的資料夾，執行批次檔啟動四顆大腦：
+### 3. 一鍵啟動 (以最先進的第八階段為例)
+進入第八階段的資料夾，執行批次檔啟動四顆大腦：
 ```bash
-cd "7_broadcast and negotiation"
+cd "8_official_a2a_protocol"
 ./start_all.bat
 ```
 *(Windows 環境下可直接雙擊執行腳本，腳本將自動為每個代理開啟獨立的命令提示字元)*
 
-接著在 Reception 的終端機視窗中，下達複雜的文字指令（如：「請幫我寫一篇關於科技趨勢的文章，並且授權給我三百元宣傳費」），即可觀察整套**「廣播、競標、人類攔截、背景完成」**的迷人全過程！
+接著在 Reception 的終端機視窗中，下達複雜的文字指令（如：「分析一下 AI 發展對員工職涯的影響」），即可觀察整套**「動態發現、智慧路由、跨代理串流回應」**的官方標準 A2A v1.0 通訊流程！

@@ -1,0 +1,6 @@
+a2a-sdk
+anthropic
+google-genai
+python-dotenv
+uvicorn
+httpx
