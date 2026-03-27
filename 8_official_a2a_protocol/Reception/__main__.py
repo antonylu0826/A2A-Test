@@ -242,8 +242,14 @@ async def main():
     print("  A2A Protocol v1.0 前台中樞 (Official SDK)")
     print("=" * 60)
 
+    # 從環境變數讀取驗證 Token
+    A2A_AUTH_TOKEN = os.getenv("A2A_AUTH_TOKEN")
+    headers = {}
+    if A2A_AUTH_TOKEN:
+        headers["Authorization"] = f"Bearer {A2A_AUTH_TOKEN}"
+
     # 關閉超時限制 (timeout=None)，以免等待 HumanAgent 人工審核時發生 Timeout Error
-    async with httpx.AsyncClient(timeout=None) as http_client:
+    async with httpx.AsyncClient(timeout=None, headers=headers) as http_client:
         # Initial agent discovery
         await reception.discover_agents(http_client)
 
